@@ -1,0 +1,30 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:30
+msgid "RUNNING"
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:32
+msgid "NOT RUNNING"
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:56
+msgid "Collecting data..."
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:62
+msgid "Enable"
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:66
+msgid "Socks5 Server Address"
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\htdocs\luci-static\resources\view\hev-socks5-tunnel.js:70
+msgid "Socks5 Server Port"
+msgstr ""
+
+#: applications/luci-app-hev-socks5-tunnel\root\usr\share\rpcd\acl.d\luci-app-hev-socks5-tunnel.json:3
+msgid "Grant UCI access for luci-app-hev-socks5-tunnel"
+msgstr ""
