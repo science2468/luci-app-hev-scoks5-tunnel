@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2025 starsfall <science2468@proton.me>
+# Copyright (C) 2026 starsfall <science2468@proton.me>
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
