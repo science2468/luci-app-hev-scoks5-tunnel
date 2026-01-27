@@ -9,7 +9,7 @@ Hev Socks5 Tunnel 是一种轻量级的隧道服务，旨在通过 Socks5 代理
 ### 日志
 
 不再使用sed命令。对hev-socks-tunnel的init脚本改写，让脚本根据UCI配置文件生成程序使用的yml配置文件。
-界面、init脚本使用AI生成。
+界面、init脚本使用AI生成后进行了修改。
 
 ### 致谢
 

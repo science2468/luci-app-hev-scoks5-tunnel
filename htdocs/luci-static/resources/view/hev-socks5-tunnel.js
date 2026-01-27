@@ -57,7 +57,7 @@ return view.extend({
             ]);
             
         }
-		// ========== Main Config Section ==========
+		// ========== Config Section ==========
         s = m.section(form.NamedSection, 'config', 'hev-socks5-tunnel');
         s.anonymous = true;
         s.addremove = false;
