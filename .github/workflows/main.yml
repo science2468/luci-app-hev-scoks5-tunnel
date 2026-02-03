@@ -23,16 +23,13 @@ jobs:
     - name: add custom package
       run: |
         cd immortalwrt-sdk*/package
-        git clone --depth=1 https://github.com/science2468/luci-app-hev-scoks5-tunnel.git
+        git clone --depth=1 https://github.com/science2468/luci-app-hev-socks5-tunnel.git
         ls
     - name: update feed
       run: |
         cd immortalwrt-sdk*
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
-
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
+        ./scripts/feeds update luci packages
+        ./scripts/feeds install luci-app-hev-socks5-tunnel
 
         make defconfig
 
@@ -41,10 +38,10 @@ jobs:
         cd immortalwrt-sdk*
         make download -j$(nproc)
         
-    - name: build
+    - name: Compile package
       run: |
         cd immortalwrt-sdk*
-        make -j$(nproc) package/luci-app-hev-socks5-tunnel/compile V=99
+        make -j$(nproc) package/luci-app-hev-socks5-tunnel/compile V=s
         
     - name: Upload openwrt firmware
       uses: actions/upload-artifact@master
