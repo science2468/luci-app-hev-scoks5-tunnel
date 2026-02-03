@@ -23,7 +23,7 @@ jobs:
     - name: add custom package
       run: |
         cd immortalwrt-sdk*/package
-        git clone --depth=1 https://github.com/science2468/luci-app-hev-socks5-tunnel.git
+        git clone --depth=1 git://github.com/science2468/luci-app-hev-socks5-tunnel.git
         ls
     - name: update feed
       run: |
