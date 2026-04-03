@@ -29,6 +29,7 @@ jobs:
       run: |
         cd openwrt-sdk*
         ./scripts/feeds update -a
+        ./scripts/fedds install -a
         make defconfig
         
     - name: Compile package
