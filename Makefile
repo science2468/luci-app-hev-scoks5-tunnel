@@ -3,7 +3,8 @@
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
-# include ../../luci.mk -> luci, $(TOPDIR) -> SDK
+# include ../../luci.mk -> luci
+include $(TOPDIR)/feeds/luci/luci.mk -> SDK
 
 include $(TOPDIR)/rules.mk
 
@@ -13,6 +14,6 @@ LUCI_PKGARCH:=all
 
 PKG_MAINTAINER:=starsfall <science2468@proton.me>
 
-include $(TOPDIR)/../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
