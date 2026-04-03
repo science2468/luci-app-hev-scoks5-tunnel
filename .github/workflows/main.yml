@@ -22,8 +22,8 @@ jobs:
 
     - name: add custom package
       run: |
-        cd openwrt-sdk*/package && \
-        git clone --depth=1 https://github.com/science2468/luci-app-hev-socks5-tunnel.git && \
+        cd openwrt-sdk*/package 
+        git clone --depth=1 https://github.com/science2468/luci-app-hev-socks5-tunnel.git
         ls
     - name: update feed
       run: |
@@ -35,6 +35,7 @@ jobs:
     - name: Compile package
       run: |
         cd openwrt-sdk*
+        find / | grep luci.mk
         make -j$(nproc) package/luci-app-hev-socks5-tunnel/compile V=s
         
     - name: Upload openwrt firmware
