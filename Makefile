@@ -4,7 +4,7 @@
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
 # include ../../luci.mk -> luci
-include $(TOPDIR)/feeds/luci/luci.mk -> SDK
+# include $(TOPDIR)/feeds/luci/luci.mk -> SDK
 
 include $(TOPDIR)/rules.mk
 
