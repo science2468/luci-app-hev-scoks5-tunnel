@@ -1,4 +1,4 @@
-name: build luci-app-hev-socks5-tunnel for immortalwrt
+name: build luci-app-hev-socks5-tunnel
 on: 
   workflow_dispatch:
 jobs: 
@@ -29,7 +29,7 @@ jobs:
       run: |
         cd openwrt-sdk*
         ./scripts/feeds update -a
-        ./scripts/fedds install -a
+        ./scripts/feeds install -a
         make defconfig
         
     - name: Compile package
